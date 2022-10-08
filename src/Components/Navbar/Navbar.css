@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.nav-wrapper {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3.5rem;
+    font-size: 14px;
+}
+
+.nav-left {
+    flex: 2;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.nav-list {
+    display: flex;
+    flex: 5;
+    margin-top: 12px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.nav-toggler {
+    display: none;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.nav-toggler div {
+    font-size: 62.5%;
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: rgb(204, 204, 204);
+    transition: 0.3s ease-in;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: rgb(159, 159, 159);
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 65.5%;
+    }
+
+    .nav-icon,
+    .nav-toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-link:hover {
+        cursor: pointer;
+        color: rgb(159, 159, 159);
+    }
+
+    .nav-menu {
+        border: 1px solid black;
+        position: fixed;
+        top: 25%;
+        right: 0;
+        height: 60vh;
+        width: 20%;
+        padding: 20px;
+        background: var(--secondary);
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.nav-list {
+    margin-right: 40px;
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+}
