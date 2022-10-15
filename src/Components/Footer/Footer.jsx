@@ -49,14 +49,14 @@ const Footer = () => {
 
                 <div className="footer-social">
                     <a href="https://www.linkedin.com/in/davidpangestu-1610dp" className="footer-social-list">
-                        <i><LinkedIn color={"white"}/></i>
+                        <i><LinkedIn/></i>
                     </a>
                     <a href="https://www.youtube.com/channel/UCXu0_6TJApSaso2Wpeor8LQ" className="footer-social-list">
-                        <i><Youtube color={"white"}/></i>
+                        <i><Youtube/></i>
                     </a>
-                    <a href=" " className="footer-social-list">
-                        {/* <i><Github/></i> */}
-                    </a>
+                    {/* <a href=" " className="footer-social-list">
+                        <i><Github/></i>
+                    </a> */}
                 </div>
 
                 <div className="footer-copyright">
