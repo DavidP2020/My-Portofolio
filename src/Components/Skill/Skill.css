@@ -1,0 +1,108 @@
+.skill-container {
+    grid-template-columns: repeat(3, 400px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.skill-content {
+    background-color: var(--blue);
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    margin: 1rem;
+}
+
+.skill-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skill-group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.skill-data {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.fa .fa-check-circle-o {
+    font-size: 1rem;
+}
+
+.skill-name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skill-level {
+    font-size: var(--smaller-font-size);
+}
+
+@media screen and (max-width: 1300px) {
+    .skill-container {
+        grid-template-columns: max-content;
+        column-gap: 4rem;
+        justify-content: center;
+        width: initial;
+    }
+    .skill-title {
+        font-size: var(--h2-font-size);
+    }
+    skill-name {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+        line-height: 18px;
+    }
+    
+    .skill-level {
+        font-size: var(--smaller-font-size);
+    }
+}
+@media screen and (max-width: 992px) {
+    .skill-container {
+        grid-template-columns: max-content;
+        column-gap: 2rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill-container {
+        grid-template-columns: 0.9fr;
+    }
+
+    .skill-content{
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skill-container{
+        grid-template-columns: 1fr;
+    }
+    .skill-content{
+        padding: 1.5rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .skill-box{
+        column-gap: 1.25rem;
+    }
+    .skill-name{
+        font-size: var(--small-font-size);
+    }
+}

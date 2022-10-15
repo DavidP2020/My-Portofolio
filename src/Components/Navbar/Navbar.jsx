@@ -10,7 +10,7 @@ const Navbar = () => {
         icon === "nav-toggler" ? setIcon("nav-toggler toggle") : setIcon("nav-toggler");
     };
     return (
-        <nav className='nav-wrapper'>
+        <nav className='nav-wrapper' id='Nav'>
             <div className="nav-left">
                 <div className="nav-name">David Pangestu</div>
             </div>
@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="nav-right">
                 <div className="nav-list">
                     <ul className={active}>
-                        <Link spy={true} to='Navbar' smooth={true} activeClass="activeClass">
+                        <Link spy={true} to='Intro' smooth={true} activeClass="activeClass">
                             <li className='nav-item'>
                                 <div className='nav-link'>
                                     <i className='nav-icon fa fa-home'></i> Home
@@ -32,10 +32,10 @@ const Navbar = () => {
                                 </div>
                             </li>
                         </Link>
-                        <Link spy={true} to='Experience' smooth={true} activeClass="activeClass">
+                        <Link spy={true} to='Skills' smooth={true} activeClass="activeClass">
                             <li className='nav-item'>
                                 <div className='nav-link'>
-                                    <i className='nav-icon fa fa-briefcase'></i> Experience
+                                    <i className='nav-icon fa fa-briefcase'></i> Skill
                                 </div>
                             </li>
                         </Link>
@@ -46,7 +46,14 @@ const Navbar = () => {
                                 </div>
                             </li>
                         </Link>
-                        <Link spy={true} to='Contact;' smooth={true} activeClass="activeClass">
+                        <Link spy={true} to='Certificate' smooth={true} activeClass="activeClass">
+                            <li className='nav-item'>
+                                <div className='nav-link'>
+                                    <i className='nav-icon fa fa-certificate'></i> Certificate
+                                </div>
+                            </li>
+                        </Link>
+                        <Link spy={true} to='Contact' smooth={true} activeClass="activeClass">
                             <li className='nav-item'>
                                 <div className='nav-link'>
                                     <i className='nav-icon fa fa-address-book-o'></i> Contact

@@ -22,7 +22,7 @@ body {
     flex: 2;
     align-items: center;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-name {
@@ -48,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .nav-toggler {
@@ -69,21 +69,22 @@ body {
 .nav-icon {
     display: none;
 }
-
+.nav-icon{
+    text-align: center;
+}
 .nav-link:hover {
     cursor: pointer;
     color: rgb(159, 159, 159);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1120px) {
     html {
         font-size: 65.5%;
     }
-
     .nav-icon,
     .nav-toggler {
         display: block;
-        cursor: pointer;
+        cursor: pointer
     }
 
     .nav-link:hover {
@@ -97,14 +98,15 @@ body {
         top: 25%;
         right: 0;
         height: 60vh;
-        width: 20%;
+        width: 25%;
         padding: 20px;
-        background: var(--secondary);
+        background: var(--blue);
         flex-direction: column;
         padding-top: 40px;
         padding-bottom: 40px;
         transform: translateX(100%);
         transition: 0.5s ease-in;
+        z-index: var(--z-tooltip);
     }
 }
 
@@ -128,4 +130,10 @@ body {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-4px, -5px);
+}
+
+@media screen and (max-width: 500px){
+    .nav-menu {
+        font-size: 12px;
+    } 
 }

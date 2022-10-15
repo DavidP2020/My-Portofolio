@@ -3,15 +3,14 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 10%;
     min-height: fit-content;
     background-color: var(--primary);
+    padding: 3rem
 }
 
 .intro-parent {
     display: flex;
     align-items: center;
-    color: yellow;
 }
 
 .intro-details-name {
@@ -64,35 +63,51 @@
     justify-content: center;
     box-shadow: 1px 0px 1px 0px var(--white);
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin: 0 0px 0 100px;
 }
 
 .intro-picture-background {
     height: 90%;
     width: 90%;
-    /* background-image: url("../../assets/Photo/David.jpg"); */
+    background-image: url("../../assets/Photo/David.jpg");
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;
+    animation: animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 }
 
 .intro-picture-background:hover {
     transform: scale(1.1);
     transition: 1s ease-in;
 }
-
+.col-icons{
+    margin: 8px;
+    color: white;
+}
 .col .col-icon {
     padding: 10px;
     padding-left: 0px;
+    margin: 10px;
 }
 
 .col .col-icon i {
     border: 1px solid var(--white);
     padding: 10px;
     border-radius: 50%;
-    margin: 5px;
 }
 
 .col .col-icon i:hover {
@@ -108,7 +123,7 @@
     }
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1200px) {
     .intro-picture {
         margin: 0 0px 0 80px
     }
@@ -134,7 +149,7 @@
 }
 
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 965px) {
     .intro-picture {
         width: 300px;
         height: 300px;
@@ -147,7 +162,7 @@
     }
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 825px) {
     .intro-picture {
         margin: 0 !important;
     }
@@ -175,7 +190,7 @@
     }
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width:  350px) {
     .intro-picture {
         height: 250px;
         width: 250px;

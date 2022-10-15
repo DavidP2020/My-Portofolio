@@ -1,11 +1,13 @@
 import Navbar from './Components/Navbar/Navbar';
 import Intro from './Components/Intro/Intro';
 import Education from './Components/Education/Education';
-import Experience from './Components/Experience/Experience';
+import Skill from './Components/Skill/Skill';
 import Contact from './Components/Contact/Contact';
 import Portofolio from './Components/Portofolio/Portofolio';
-import Wave from "./Components/Intro/Wave"
-import Header from "./Components/Header/Header"
+import Footer from './Components/Footer/Footer';
+import Scroll from './Components/ScrollUp/Scrollup';
+import Certificate from './Components/Certificate/Certificate';
+// import Wave from "./Components/Intro/Wave"
 import './App.css';
 import { useContext } from "react";
 import { themeContext } from "./Components/Toggle/Context";
@@ -16,33 +18,22 @@ function App() {
     <div
       className="App"
       style={{
-        background: darkMode ? "#100F0F" : "",
+        background: darkMode ? "#100F0F" : "var(--E2DCC8)",
         color: darkMode ? "white" : "",
       }}
     >
       <Navbar />
       <>
-      <Intro />
-      <Wave />
+        <Intro />
+        {/* <Wave /> */}
       </>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Education />      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Experience />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Portofolio />      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <Education />
+      <Skill />
+      <Portofolio />
+      <Certificate />
       <Contact />
+      <Footer />
+      <Scroll />
     </div>
   );
 }

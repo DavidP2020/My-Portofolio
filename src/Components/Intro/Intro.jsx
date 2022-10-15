@@ -1,22 +1,28 @@
 import React from 'react'
 import Typical from 'react-typical'
+import Github from '@iconscout/react-unicons/icons/uil-github'
+import Drive from '@iconscout/react-unicons/icons/uil-google-drive'
 import './Intro.css'
 const Intro = () => {
     return (
         <>
-            <div className='intro-container'>
+            <div id="Intro" className='intro-container'>
                 <div className='intro-parent'>
                     <div className="intro-details">
                         <div className="intro-wrapper-text">
-                            <div className="col">
-                                <div className="col-icon">
-                                    <a href="">
-                                        <i className='fa fa-linkedin'></i>
-                                    </a>
-                                    {/* <a href="">
-                                    <i className='fa fa-linkedin'></i>
-                                </a> */}
+
+                            <div className="col-wrapper">
+                                <div className="col">
+                                    <div className="col-icon">
+                                        <a href="" className='col-icons'>
+                                            {/* <i><Github/></i> */}
+                                        </a>
+                                        <a href="https://drive.google.com/drive/folders/1DOsM0NZIJ0Y0ddUhWPleeh1iyaRBdazM?usp=sharing" className='col-icons'>
+                                            <i><Drive /></i>
+                                        </a>
+                                    </div>
                                 </div>
+
                             </div>
 
                             <div className="intro-details-name">
@@ -46,7 +52,11 @@ const Intro = () => {
                                 /> */}
                                     </h1>
                                     <span className='intro-description'>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi et dignissimos adipisci aliquam rerum deserunt ut aliquid possimus ea! Minus quae sapiente eveniet! Est assumenda laudantium soluta temporibus reprehenderit voluptas?
+                                        I am a student from Bina Nusantara
+                                        University majoring in computer science. I
+                                        am a responsible person, conscientious, easy
+                                        to get along with and happy to learn new
+                                        things.
                                     </span>
                                 </span>
                             </div>
