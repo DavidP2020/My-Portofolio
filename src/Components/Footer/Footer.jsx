@@ -54,9 +54,9 @@ const Footer = () => {
                     <a href="https://www.youtube.com/channel/UCXu0_6TJApSaso2Wpeor8LQ" className="footer-social-list">
                         <i><Youtube/></i>
                     </a>
-                    {/* <a href=" " className="footer-social-list">
+                    <a href="https://github.com/DavidP2020/My-Portofolio" className="footer-social-list">
                         <i><Github/></i>
-                    </a> */}
+                    </a>
                 </div>
 
                 <div className="footer-copyright">
