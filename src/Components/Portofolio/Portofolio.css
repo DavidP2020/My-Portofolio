@@ -1,67 +1,67 @@
 .porto-container {
-    width: 768px;
+  width: 768px;
 }
 
 .porto-card {
-    background-color: var(--blue);
-    border: 1px solid;
-    padding: 1.5rem 2rem;
-    border-radius: 1rem;
-    margin-bottom: var(--mb-3);
-    text-align: center;
+  background-color: var(--blue);
+  border: 1px solid;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: var(--mb-3);
+  text-align: center;
 }
 
 .porto-img {
-    width: 600px;
-    margin-bottom: var(--mb-1);
-    box-shadow: 1px 2px;
+  width: 600px;
+  margin-bottom: var(--mb-1);
+  box-shadow: 1px 2px;
 }
 .porto-web {
-    width: 400px;
-    margin-bottom: var(--mb-1);
-    box-shadow: 1px 2px;
+  width: 400px;
+  margin-bottom: var(--mb-1);
+  box-shadow: 1px 2px;
 }
 
 .porto-name {
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-25);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-25);
 }
 
 .porto-desc {
-    font-size: var(--small-font-size);
+  font-size: var(--small-font-size);
 }
 
 @media screen and (max-width: 830px) {
-    .porto-container {
+  .porto-container {
     width: initial;
-    }
+  }
 
-    .porto-card{
-        padding: 1.25rem 1.5rem;
-    }
+  .porto-card {
+    padding: 1.25rem 1.5rem;
+  }
 }
 
-
-.website-container-active{
-    display: none;
+.website-container-active {
+  display: none;
 }
 
-.design-container-active{
-    display: block;
+.design-container-active {
+  display: block;
 }
 
-.porto-tabs{
-    display: flex;
-    justify-content: center;
-    margin-bottom: var(--mb-2);
+.porto-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--mb-2);
 }
 
-.porto-button{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    margin: 0 var(--mb-1);
-    border: 1px solid ;
-    padding: 10px;
-    border-radius: 25%;
+.porto-button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin: 0 var(--mb-1);
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 25%;
+  cursor: pointer;
 }

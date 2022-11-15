@@ -2,6 +2,7 @@ import Image1 from "../../../assets/Photo/Image1.png"
 import Image2 from "../../../assets/Photo/Image2.jpg"
 import Image3 from "../../../assets/Photo/Image3.png"
 import Image4 from "../../../assets/Photo/Website.png"
+import Image5 from "../../../assets/Video/Video.mp4"
 
 export const Data = [
     {
@@ -27,6 +28,12 @@ export const Data = [
         image : Image4,
         title : "Website",
         desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias laborum qui, excepturi id ad consequatur esse quidem atque dicta eaque quasi a fugiat animi nam aliquid labore cupiditate vero."
-    }
+    },
+    {
+        id : 5,
+        image : Image5,
+        title : "Video",
+        desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestias laborum qui, excepturi id ad consequatur esse quidem atque dicta eaque quasi a fugiat animi nam aliquid labore cupiditate vero."
+    },
 ]
 

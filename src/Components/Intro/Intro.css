@@ -1,203 +1,201 @@
 .intro-container {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    min-height: fit-content;
-    background-color: var(--primary);
-    padding: 3rem
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: fit-content;
+  background-color: var(--primary);
+  padding: 3rem;
 }
 
 .intro-parent {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .intro-details-name {
-    font-size: 20px;
-    font-family: "Poppins SemiBold";
+  font-size: 20px;
+  font-family: "Poppins SemiBold";
 }
 
 .intro-details-role {
-    display: flex;
-    flex-direction: column;
-    margin: 14px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
 }
 
 .primary-text {
-    color: var(--white);
+  color: var(--white);
 }
 
 .highlight-text {
-    color: var(--blue);
-    text-shadow: 1px 0 0 var(--quaternary);
-    font-weight: bold;
+  color: var(--blue);
+  text-shadow: 1px 0 0 var(--quaternary);
+  font-weight: bold;
 }
 
 .intro-details-role {
-    font-size: 18px;
-    margin: 5px 0 0 0;
-    font-family: "Poppins Light";
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  font-family: "Poppins Light";
 }
 
 .intro-wrapper-text {
-    padding: 10px;
-    width: 800px;
-    justify-content: center;
-    align-items: center;
+  padding: 10px;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-option {
-    margin: 20px;
+  margin: 20px;
 }
 
 .intro-option .highlighted-btn:hover {
-    background-color: var(--darkblue);
-    border: 2px solid var(--tertiary);
-    color: white
+  background-color: var(--darkblue);
+  border: 2px solid var(--tertiary);
+  color: white;
 }
 
 .intro-picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1px 0px 1px 0px var(--white);
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    margin: 0 0px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 0px 1px 0px var(--white);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0 0px 0 100px;
 }
 
 .intro-picture-background {
-    height: 90%;
-    width: 90%;
-    background-image: url("../../assets/Photo/David.jpg");
-    background-size: cover;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    animation: animate 8s ease-in-out infinite 1s;
+  height: 90%;
+  width: 90%;
+  background-image: url("../../assets/Photo/David.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  animation: animate 8s ease-in-out infinite 1s;
 }
 
-@keyframes animate{
-    0%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-    100%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 .intro-picture-background:hover {
-    transform: scale(1.1);
-    transition: 1s ease-in;
+  transform: scale(1.1);
+  transition: 1s ease-in;
 }
-.col-icons{
-    margin: 8px;
-    color: white;
+.col-icons {
+  margin: 8px;
+  color: white;
 }
 .col .col-icon {
-    padding: 10px;
-    padding-left: 0px;
-    margin: 10px;
+  padding: 10px;
+  padding-left: 0px;
+  margin: 10px;
 }
 
 .col .col-icon i {
-    border: 1px solid var(--white);
-    padding: 10px;
-    border-radius: 50%;
+  border: 1px solid var(--white);
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .col .col-icon i:hover {
-    transform: scale(1.2);
-    border: 1px solid var(--blue);
+  transform: scale(1.2);
+  border: 1px solid var(--blue);
 }
 
-
 @media screen and (max-width: 1415px) {
-    .intro-wrapper-text {
-        width: 700px;
-        padding: 10px;
-    }
+  .intro-wrapper-text {
+    width: 700px;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .intro-picture {
-        margin: 0 0px 0 80px
-    }
+  .intro-picture {
+    margin: 0 0px 0 80px;
+  }
 
-    .intro-details-name {
-        font-size: 20px;
-    }
+  .intro-details-name {
+    font-size: 20px;
+  }
 
-    .intro-details-role .primary-text {
-        font-size: 12px;
-    }
+  .intro-details-role .primary-text {
+    font-size: 12px;
+  }
 
-    .intro-option .btn {
-        width: 120px;
-        padding: 11px 0;
-        z-index: 700;
-    }
+  .intro-option .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
 
-    .intro-wrapper-text {
-        width: 500px;
-        padding: 10px;
-    }
+  .intro-wrapper-text {
+    width: 500px;
+    padding: 10px;
+  }
 }
 
-
 @media screen and (max-width: 965px) {
-    .intro-picture {
-        width: 300px;
-        height: 300px;
-        margin: 0 0 0 4px;
-    }
+  .intro-picture {
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 4px;
+  }
 
-    .intro-wrapper-text {
-        width: 500px;
-        padding: 10px;
-    }
+  .intro-wrapper-text {
+    width: 500px;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 825px) {
-    .intro-picture {
-        margin: 0 !important;
-    }
+  .intro-picture {
+    margin: 0 !important;
+  }
 
-    .intro-parent {
-        flex-direction: column-reverse;
-        margin: 40px 0 0 0;
-    }
+  .intro-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
 
-    .intro-details {
-        margin: 25px 0 0;
-    }
+  .intro-details {
+    margin: 25px 0 0;
+  }
 
-    .intro-option .highlighted-btn {
-        margin: 0 !important;
-    }
+  .intro-option .highlighted-btn {
+    margin: 0 !important;
+  }
 
-    .intro-option .intro-details-role {
-        text-align: center;
-    }
+  .intro-option .intro-details-role {
+    text-align: center;
+  }
 
-    .intro-wrapper-text {
-        width: 300px;
-        padding: 10px;
-    }
+  .intro-wrapper-text {
+    width: 300px;
+    padding: 10px;
+  }
 }
 
-@media screen and (max-width:  350px) {
-    .intro-picture {
-        height: 250px;
-        width: 250px;
-        margin-top: -0;
-    }
+@media screen and (max-width: 350px) {
+  .intro-picture {
+    height: 250px;
+    width: 250px;
+    margin-top: -0;
+  }
 
-    .intro-details {
-        width: 90%;
-    }
+  .intro-details {
+    width: 90%;
+  }
 }
